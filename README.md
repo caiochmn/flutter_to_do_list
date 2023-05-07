@@ -1,4 +1,4 @@
-<h1 align="center">To-Do List 2.0</h1>
+<h1 align="center">To-Do List 2.0</h1> 
 
 ## About The Project
 
