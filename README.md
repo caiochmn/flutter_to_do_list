@@ -1,24 +1,47 @@
-<h1 align="center">To-Do List</h1>
+<h1 align="center">To-Do List 2.0</h1>
 
-## About The Project
+## Sobre o Projeto
+Um aplicativo simples de lista de tarefas criado em aula orientada pelo professor Edson M. de Souza.
+Modificad o projeto antigo para suporta as ultimas verções do sdk Android
 
-A simple To-Do list app made in class oriented by the professor [Edson M. de Souza](https://github.com/EdsonMSouza)
+## Construído com
+Flutter
+API PHP criada por Edson M. de Souza
 
-### Built With
-* [Flutter](http://flutter.dev/)
-* [PHP API](https://github.com/EdsonMSouza/php-api-to-do-list) by [Edson M. de Souza](https://github.com/EdsonMSouza)
+## Como Usar
+Altere a baseUrl na linha 1 em lib/constants/app_constants.dart com o caminho da sua API. 
+Você pode usar a string main como baseUrl padrão.
 
-### How to Use
-Change the baseUrl at line 1 in `lib/constants/app_constants.dart` with your API path. You can use the `main` string as default baseUrl.
+EX: 
+``` dart 
+class URI {
+  // SERVER
+  final String main = 'http://php-api.duckdns.org';
 
-### Known Issues
-* [Host returning error 406](https://github.com/Wilian-N-Silva/flutter_to_do_list/issues/1)
+  // LOCALHOST USING Android Virtual Device
+  final String devAVD = 'http://php-api.duckdns.org';
 
-### To-Do
-* Use `flutter_secure_storage package` to store token
+  // LOCALHOST USING Browser
+  final String devBrowser = 'http://php-api.duckdns.org';
+}
+```
 
-## Acknowledgements
+## Problemas Conhecidos
+Host retornando erro 406
+# Ao baixar o código original tiver que deletar a versão antiga do android do repositori o e copiar  de um outro projeto
+# Gerei um novo projeto e copie a pasta android para dentro do projeto
+# Dentro da pasta do projeto rode  o comando abaixo para atualizar as depemdencias
+
+``` shell
+flutter get pub
+```
+
+## Demo do projeto
+* [API](http://php-api.duckdns.org/)
+
+## Tarefas a Realizar
+Usar o pacote flutter_secure_storage para armazenar o token
+
+## Agradecimentos
+Edson M. de Souza
 * [Edson M. de Souza](https://github.com/EdsonMSouza)
-
-teste
-
