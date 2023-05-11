@@ -2,11 +2,11 @@ final baseUrl = URI().main;
 
 class URI {
   // SERVER
-  final String main = 'http://php-api.duckdns.org';
+  final String main = 'https://todolist-api.edsonmelo.com.br';
 
   // LOCALHOST USING Android Virtual Device
-  final String devAVD = 'http://php-api.duckdns.org';
+  final String devAVD = 'https://todolist-api.edsonmelo.com.br';
 
   // LOCALHOST USING Browser
-  final String devBrowser = 'http://php-api.duckdns.org';
+  final String devBrowser = 'https://todolist-api.edsonmelo.com.br';
 }

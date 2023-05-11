@@ -1,5 +1,6 @@
 import 'dart:convert';
-import 'dart:io';
+//import 'dart:io';
+import 'package:universal_io/io.dart';
 
 import 'package:to_do_list/constants/app_constants.dart';
 import 'package:to_do_list/models/user.dart';
@@ -7,6 +8,7 @@ import 'package:to_do_list/models/user.dart';
 class UserService {
   // SIGNUP
   static Future create(User user) async {
+    HttpClient httpClient = newUniversalHttpClient();
     final client = HttpClient();
     return await client
         .postUrl(Uri.parse('$baseUrl/api/user/new/'))

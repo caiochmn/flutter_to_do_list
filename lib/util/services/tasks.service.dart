@@ -1,5 +1,6 @@
 import 'dart:convert';
-import 'dart:io';
+//import 'dart:io';
+import 'package:universal_io/io.dart';
 
 import 'package:to_do_list/constants/app_constants.dart';
 import 'package:to_do_list/models/task.dart';
@@ -8,6 +9,7 @@ import 'package:to_do_list/models/user.dart';
 class TasksService {
   // SEARCH
   static Future getTasks() async {
+    HttpClient httpClient = newUniversalHttpClient();
     final client = HttpClient();
 
     return await client
